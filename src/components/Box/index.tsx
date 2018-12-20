@@ -1,11 +1,11 @@
-import * as React from 'react';
+import { connect } from 'react-redux'
 
-const Box : React.SFC = () : JSX.Element => {
-    return (
-        <div className="box">
-          BOX!
-        </div>
-    );
-};
+let Box = ({ dispatch }) => (
+  <div className="box">
+  BOX!
+  </div>
+)
+
+Box = connect()(Box)
 
 export default Box;

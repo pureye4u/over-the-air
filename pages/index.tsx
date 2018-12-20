@@ -1,10 +1,16 @@
-import Box from '../src/components/Box';
+import { Box } from '../src/components/Box'
 
-const Index = () => (
-  <div>
-    <h1>Test</h1>
-    <Box />
-  </div>
-);
+class Index extends React.Component {
+
+  render() {
+    return (
+      <div>
+        <h1>Test</h1>
+        <Box />
+        <button>Add</button>
+      </div>
+    );
+  }
+}
 
 export default Index;
